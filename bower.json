@@ -1,0 +1,24 @@
+{
+  "name": "a4g",
+  "authors": [
+    "Michiel Van den Berghe <michiel.vdb@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "juicy/static/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "leaflet": "~0.7.7",
+    "Materialize": "materialize#~0.97.5"
+  }
+}
