@@ -1,0 +1,370 @@
+Composition {
+	CurrentTime = 0,
+	RenderRange = { 0, 0, },
+	GlobalRange = { 0, 0, },
+	CurrentID = 8,
+	Version = "Fusion 6.3 build 946",
+	SavedOutputs = 2,
+	HeldTools = 0,
+	DisabledTools = 0,
+	LockedTools = 0,
+	AudioOffset = 0,
+	Resumable = true,
+	OutputClips = {
+	},
+	Tools = {
+		Text3D1 = Text3D {
+			Inputs = {
+				Font = Input { Value = "Gotham Bold", },
+				StyledText = Input { Value = "VELO    AUTO", },
+				Style = Input { Value = "Regular", },
+				Extrusion = Input { Value = 1, },
+				ExtrusionDepth = Input { Value = 0.1071823, },
+				ManualFontKerningPlacement = Input {
+					Value = StyledText {
+						Array = {
+						},
+						Value = "",
+					},
+				},
+				ShadingGradient1 = Input {
+					Value = Gradient {
+						Colors = {
+							[0] = { 0, 0, 0, 1, },
+							[1] = { 1, 1, 1, 1, },
+						},
+					},
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 660, 16.5, }, },
+		},
+		Instance_Text3D1 = Text3D {
+			CtrlWZoom = false,
+			SourceOp = "Text3D1",
+			Inputs = {
+				SceneInput = Input { },
+				["Transform3DOp.Translation"] = Input { },
+				["Transform3DOp.Rotation"] = Input { },
+				["Transform3DOp.PivotNest"] = Input { },
+				["Transform3DOp.ScaleNest"] = Input { },
+				["Transform3DOp.TargetNest"] = Input { },
+				LayoutRotation = Input { },
+				Size = Input {
+					Value = 0.9424084,
+				},
+				StyledText = Input {
+					Value = "v",
+				},
+				Extrusion = Input {
+					Value = 1,
+				},
+				InternationalFontControls = Input { },
+				AdvancedFontControls = Input { },
+				Alignment = Input { },
+				LineRotation = Input { },
+				WordRotation = Input { },
+				CharacterRotation = Input { },
+				Options1 = Input { },
+				Color1 = Input { },
+				BevelMaterial = Input { },
+				Transform1 = Input { },
+				StartEndRenderScripts = Input { },
+			},
+			ViewInfo = OperatorInfo { Pos = { 770, 49.5, }, },
+		},
+		Merge3D2 = Merge3D {
+			Inputs = {
+				SceneInput1 = Input {
+					SourceOp = "Text3D1",
+					Source = "Output",
+				},
+				SceneInput2 = Input {
+					SourceOp = "Instance_Text3D1",
+					Source = "Output",
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 660, 49.5, }, },
+		},
+		Camera3D1 = Camera3D {
+			Inputs = {
+				["Transform3DOp.Translate.Y"] = Input { Value = 2.2211392391075, },
+				["Transform3DOp.Translate.Z"] = Input { Value = 17.9792766897309, },
+				AoV = Input { Value = 24.3265863475745, },
+				["Stereo.Method"] = Input { Value = FuID { "Parallel", }, },
+				["SurfacePlaneInputs.ObjectID.ObjectID"] = Input { Value = 1, },
+				["MtlStdInputs.MaterialID"] = Input { Value = 1, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 550, 115.5, }, },
+		},
+		Merge3D1 = Merge3D {
+			Inputs = {
+				SceneInput1 = Input {
+					SourceOp = "Merge3D2",
+					Source = "Output",
+				},
+				SceneInput2 = Input {
+					SourceOp = "Camera3D1",
+					Source = "Output",
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 660, 115.5, }, },
+		},
+		Renderer3D1 = Renderer3D {
+			Inputs = {
+				GlobalOut = Input { Value = 0, },
+				Width = Input { Value = 1920, },
+				Height = Input { Value = 1080, },
+				SceneInput = Input {
+					SourceOp = "Merge3D1",
+					Source = "Output",
+				},
+				["RendererSoftware.Channels.RGBA"] = Input { Disabled = true, },
+				["RendererSoftware.Lighting"] = Input { Value = 1, },
+				["RendererSoftware.LightingEnabled"] = Input { Value = 1, },
+				["RendererSoftware.ShadowsEnabled"] = Input { Value = 1, },
+			},
+			ViewInfo = OperatorInfo { Pos = { 660, 181.5, }, },
+		},
+		Background1 = Background {
+			Inputs = {
+				GlobalOut = Input { Value = 0, },
+				Width = Input { Value = 1920, },
+				Height = Input { Value = 1080, },
+				Gradient = Input {
+					Value = Gradient {
+						Colors = {
+							[0] = { 0, 0, 0, 1, },
+							[1] = { 1, 1, 1, 1, },
+						},
+					},
+				},
+			},
+			ViewInfo = OperatorInfo { Pos = { 385, 214.5, }, },
+		},
+	},
+	Views = {
+		{
+			Mode = 3,
+			LayoutPreset = 0,
+			Left = 0,
+			Top = 0,
+			Width = 1362,
+			Height = 533,
+			Views = {
+				Main = MultiView {
+					Active = "Flow",
+					Flow = FlowView {
+						Flags = {
+							AutoHideNavigator = true,
+							GridSnap = true,
+							AutoSnap = true,
+							RemoveRouters = true,
+						},
+						NavigatorSize = { 100, 100, },
+						Direction = "Horizontal",
+						PipeStyle = "Direct",
+						Scale = 1,
+						Offset = { -5, 112, },
+					},
+					Timeline = TimelineView {
+						TreeControlState = {
+						},
+						DisplayMode = "All Tools",
+						ShowCurrentTimeTools = false,
+						Filter = "Show All",
+						ShowSelectedTools = false,
+						ShowAnimatedToolsOnly = false,
+						ShowEditBoxes = false,
+						KeyFrameView = {
+							Position = { Left = 130, Bottom = 338, },
+							ScaleX = 0.942587832047986,
+							OffsetX = -49.9571550985433,
+							OffsetY = 0,
+							AutoScaling = "scroll",
+							AutoSnapTo = "frame",
+							AutoSnapToGuidelines = false,
+							GuidelinesGrabEnabled = true,
+							GuidelinesSnapTo = "none",
+						},
+						Spreadsheet = { LeftPos = 130, Visible = false, },
+					},
+					Spline = SplineEditorView {
+						LeftPos = 205,
+						ScaleX = 0.2,
+						ScaleY = 0.00343642611683849,
+						OffsetX = -3.6,
+						OffsetY = 0,
+						AutoScaling = "scroll",
+						AutoSnapTo = "frame",
+						AutoSnapToGuidelines = false,
+						GuidelinesSnapTo = "frame",
+						ShowKeyMarkers = false,
+						IndependentHandles = false,
+						ShowNonSplineModifiers = false,
+						GuidelinesGrabEnabled = true,
+						ShowOneToolOnly = false,
+						ShowSelectedTools = false,
+						ShowAllInputs = false,
+						Filter = "Show All",
+					},
+				},
+				Controls = MultiView { Active = "Tools", },
+			},
+			Layout = {
+				Columns = 2,
+				RatioX = 1,
+				RatioY = 1,
+				{
+					Rows = 3,
+					RatioX = 0.815047021943574,
+					RatioY = 0.0104031209362809,
+					{
+						Columns = 2,
+						RatioX = 1,
+						RatioY = 0.465268676277851,
+						{ ID = "Left", RatioX = 0.500385505011565, RatioY = 88.7492957746479, Pop = true, },
+						{ ID = "Right", RatioX = 0.499614494988435, Pop = true, },
+						Pop = true,
+					},
+					{ ID = "Main", RatioY = 0.463958060288336, Pop = true, },
+					{ ID = "Time", SnapY = 52, Flat = true, },
+				},
+				{
+					Rows = 2,
+					PixelX = 293,
+					{ ID = "Controls", RatioX = 1, RatioY = 1, },
+					{ ID = "Transport", FixedY = -2, },
+				},
+			},
+		},
+	},
+	Prefs = {
+		Comp = {
+			Paths = {
+			},
+			LastFile = "C:\\PROJECTS\\seeq\\cavalier\\_Incoming\\Cavalor_V009 folder\\Cavalor_V009 folder\\(Footage)\\7. Mennen.jpg",
+			FrameFormat = {
+				GuideRatio = 1.31619537275064,
+			},
+			Unsorted = {
+				GlobalEnd = 0,
+			},
+			Views = {
+				Defaults = {
+					View3D = {
+						CamPersp = {
+							Separation = 0.1,
+						},
+					},
+				},
+				Right = {
+					Viewer = {
+						ScaleMode = 1,
+					},
+				},
+				Left = {
+					Viewer = {
+						ScaleMode = 1,
+					},
+					View3D = {
+						Options = {
+							Lighting = true,
+						},
+						CamPersp = {
+							Position = {
+								X = 0.111613750457764,
+								Y = 0.727099537849426,
+								Z = -0.534651756286621,
+							},
+							Rotation = {
+								X = 32.5999984741211,
+								Y = -32.8000030517578,
+								Z = 0,
+							},
+							Scale = 0.5,
+							FovY = 45,
+							Near = 0.0500000007450581,
+							Far = 100000,
+							AdaptiveNear = false,
+							AdaptiveFar = false,
+							Separation = 0.100000001490116,
+							Convergence = 0,
+						},
+						CamFront = {
+							Position = {
+								X = 0,
+								Y = 0,
+								Z = 0,
+							},
+							Rotation = {
+								X = 0,
+								Y = 0,
+								Z = 0,
+							},
+							Scale = 1,
+							Near = -100000,
+							Far = 100000,
+							AdaptiveNear = false,
+							AdaptiveFar = false,
+						},
+						CamTop = {
+							Position = {
+								X = 0,
+								Y = 0,
+								Z = 0,
+							},
+							Rotation = {
+								X = 90,
+								Y = 0,
+								Z = 0,
+							},
+							Scale = 1,
+							Near = -100000,
+							Far = 100000,
+							AdaptiveNear = false,
+							AdaptiveFar = false,
+						},
+						CamRight = {
+							Position = {
+								X = 0,
+								Y = 0,
+								Z = 0,
+							},
+							Rotation = {
+								X = 0,
+								Y = -90,
+								Z = 0,
+							},
+							Scale = 1,
+							Near = -100000,
+							Far = 100000,
+							AdaptiveNear = false,
+							AdaptiveFar = false,
+						},
+						CamLeft = {
+							Position = {
+								X = 0,
+								Y = 0,
+								Z = 0,
+							},
+							Rotation = {
+								X = 0,
+								Y = 90,
+								Z = 0,
+							},
+							Scale = 1,
+							Near = -100000,
+							Far = 100000,
+							AdaptiveNear = false,
+							AdaptiveFar = false,
+						},
+					},
+				},
+			},
+			QuickTime = {
+			},
+		},
+	},
+}
+
+ 
