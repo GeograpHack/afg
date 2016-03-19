@@ -160,6 +160,69 @@
       }
     }
   ]
+},
+
+
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Leopoldkazerne"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.722906112670898,
+          51.0419875291025
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Wintercircus"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.7272298336029053,
+          51.048215136471846
+        ]
+      }
+    }
+  ]
+},
+
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Sterre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.710846900939942,
+          51.02425627103607
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "'t Pand"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.7197089195251465,
+          51.05285367923352
+        ]
+      }
+    }
+  ]
 }
-
-
