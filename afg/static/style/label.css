@@ -1,24 +1,3 @@
-@import "variables";
-@import "materialize";
-
-#map {
-  height: 600px;
-  margin-bottom: -20px;
-}
-
-.logo {
-  position: absolute;
-  top: 515px;
-}
-
-.logo img {
-  height: 150px;
-}
-
-.leaflet-routing-container {
-  display: none;
-}
-
 .leaflet-label {
     background: rgb(235, 235, 235);
     background: rgba(235, 235, 235, 0.81);
