@@ -115,7 +115,38 @@
   ]
 }
 
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Title": "Sint-Annakerk"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.734750747680664,
+          51.04912399696649
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
 
+        "Title": "Papegaaistraat"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.7162435054779053,
+          51.050182906550944
+        ]
+      }
+    }
+  ]
+}
 
 
 
