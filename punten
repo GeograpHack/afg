@@ -4,9 +4,6 @@
     {
       "type": "Feature",
       "properties": {
-        "marker-color": "#fd9200",
-        "marker-size": "medium",
-        "marker-symbol": "entrance",
         "title": "'t Kuipke"
       },
       "geometry": {
@@ -20,9 +17,6 @@
     {
       "type": "Feature",
       "properties": {
-        "marker-color": "#0d00fd",
-        "marker-size": "medium",
-        "marker-symbol": "marker",
         "title": "St. Jacob"
       },
       "geometry": {
@@ -43,9 +37,6 @@
     {
       "type": "Feature",
       "properties": {
-        "marker-color": "#fd0000",
-        "marker-size": "medium",
-        "marker-symbol": "rail-underground",
         "title": "Station"
       },
       "geometry": {
@@ -59,9 +50,6 @@
     {
       "type": "Feature",
       "properties": {
-        "marker-color": "#8d4bb1",
-        "marker-size": "medium",
-        "marker-symbol": "star",
         "title": "Universiteit"
       },
       "geometry": {
@@ -83,9 +71,6 @@
     {
       "type": "Feature",
       "properties": {
-        "marker-color": "#c1a43c",
-        "marker-size": "medium",
-        "marker-symbol": "roadblock",
         "title": "Kouter"
       },
       "geometry": {
@@ -99,9 +84,6 @@
     {
       "type": "Feature",
       "properties": {
-        "marker-color": "#1a00fd",
-        "marker-size": "medium",
-        "marker-symbol": "triangle",
         "title": "STAM"
       },
       "geometry": {
@@ -121,7 +103,7 @@
     {
       "type": "Feature",
       "properties": {
-        "Title": "Sint-Annakerk"
+        "title": "Sint-Annakerk"
       },
       "geometry": {
         "type": "Point",
@@ -135,7 +117,7 @@
       "type": "Feature",
       "properties": {
 
-        "Title": "Papegaaistraat"
+        "title": "Papegaaistraat"
       },
       "geometry": {
         "type": "Point",
