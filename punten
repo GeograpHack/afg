@@ -130,6 +130,36 @@
   ]
 }
 
-
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Capitole"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.731961250305176,
+          51.04802459388414
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Lange Munt"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.7233996391296382,
+          51.056448188191034
+        ]
+      }
+    }
+  ]
+}
 
 
