@@ -1,0 +1,27 @@
+service_cells: >
+  select
+    rc2_hexa.gid as hexa_id,
+    ST_Transform(rc2_hexa.geom, 4326) as hexa_geom,
+    ST_Transform(rc2_hexa.centro, 4326) as hexa_center,
+    rc2_service.sec_bike as bike,
+    rc2_service.sec_car as car
+  from
+    rc2_service inner join rc2_hexa on (rc2_hexa.gid = rc2_service.t)
+  where
+    rc2_service.f = %(origin)s
+    and (sec_bike is not null or sec_car is not null)
+
+cells_with_data: >
+  select
+    rc2_hexa.gid as hexa_id,
+    ST_Transform(rc2_hexa.geom, 4326) as hexa_geom
+  from
+    rc2_hexa
+  where
+    exists (
+      select * from rc2_service
+      where f = rc2_hexa.gid
+      and (sec_bike is not null or sec_car is not null)
+    )
+
+

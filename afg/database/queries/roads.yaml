@@ -1,0 +1,12 @@
+problems: >
+  select id, geom::geometry
+  from roads r
+  where ST_Contains(
+    ST_Buffer(
+      ST_Transform(ST_SetSRID(%(geom)s, 4326), 3812),
+      1
+    ),
+    ST_Transform(r.geom, 3812)
+  ) and (
+    ST_Line_Locate_Point(ST_SetSRID(%(geom)s, 4326), ST_StartPoint(ST_LineMerge(r.geom))) - ST_Line_Locate_Point(ST_SetSRID(%(geom)s, 4326), ST_EndPoint(ST_LineMerge(r.geom))) > 0
+  )

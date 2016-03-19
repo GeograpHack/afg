@@ -1,0 +1,63 @@
+counts_per:
+  query: >
+    with interval as (
+      select tsrange(start, start + %(step)s) as period
+      from generate_series(
+        %(start)s::timestamp,
+        %(end)s::timestamp,
+        %(step)s
+      ) s(start)
+      where extract(dow from start) in ({{days}})
+    )
+    select
+      place_id,
+      interval.period as raw_period,
+      to_char(lower(interval.period), %(date_format)s) as period,
+      sum(count) as count
+    from interval
+    left join bike_count on(interval.period && bike_count.interval)
+    {% if id %}
+    where place_id = %(id)s
+    {% endif %}
+    group by place_id, interval.period
+    order by interval.period
+  defaults:
+    start: '2015-09-16 00:00:00'
+    end:   '2015-09-22 23:00:00'
+    days:   '1, 2, 3, 4, 5, 6, 0'
+    step:  '1 day'
+    date_format: 'Dy YYYY-MM-DD'
+
+counting_points: >
+  with count_per_day as (
+    {{query('counts_per')}}
+  )
+  select id, province, municipality, geom, avg(count)::float as day_average
+  from place
+  left join count_per_day on(place.id = count_per_day.place_id)
+  group by id
+
+average_days:
+  query: |
+    with counts_per_hour as (
+      {{query('counts_per')}}
+    )
+    select period, avg(count)::float as avg_count
+    from counts_per_hour
+    group by period
+    order by period
+  defaults:
+    step: '1 hour'
+    date_format: 'HH24:00'
+    days: '1, 2, 3, 4, 5, 6, 0'
+
+max_day_average: >
+  select max(day_average)
+  from (
+    select
+      place.id as id, province, municipality, geom,
+      sum(bike_count.count) / count(bike_count.id) * 96 as day_average
+    from place
+    left join bike_count on(place.id = bike_count.place_id)
+    group by place.id
+  ) place_averages
