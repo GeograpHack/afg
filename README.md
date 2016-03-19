@@ -1,5 +1,4 @@
-Suggest ideas for the pitch
+To start the app
 
-* vind de korste 
-* ecologish idee
-* 
+1. make sure to have Pyth 3.3
+* `python server.py`
