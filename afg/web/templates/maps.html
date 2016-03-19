@@ -7,6 +7,7 @@
 <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
 <script src="http://we12s008.ugent.be/nomob-ng/vendor/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script> <!-- Routes on bike routes -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+<script src="lrm-graphhopper.js"></script>
 <link rel="stylesheet" href="http://we12s008.ugent.be/nomob-ng/vendor/leaflet-routing-machine/dist/leaflet-routing-machine.css" />
 <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
 <style>
@@ -39,11 +40,22 @@ $( document ).ready(function() {
 	});
 });
 
+var bikeRouterOSRM = L.Routing.osrm({
+    serviceUrl: 'http://osrm.mapzen.com/bicycle/viaroute'
+});
+
+var bikeRouterGraphHopper = new L.Routing.GraphHopper('cb26306c-b91d-4ffa-a33f-42a6bbe2b07f' , {
+        urlParameters: {
+            vehicle: 'foot'
+        }
+ });
+
 var routing = L.Routing.control({
     waypoints: [
         L.latLng(51.04130620199642, 3.7283563613891597),
         L.latLng(51.057055113388515, 3.7207388877868652)
     ],
+    router: bikeRouterGraphHopper,
     routeWhileDragging: true
 }).addTo(map).hide();
 
