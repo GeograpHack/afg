@@ -1,0 +1,228 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "'t Kuipke"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.7202185392379765,
+          51.03845598740555
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "St. Jacob"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.7278655171394353,
+          51.05632343035917
+        ]
+      }
+    }
+  ]
+},
+
+
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.7109756469726562,
+          51.0361588229598
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Universiteit"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.720250725746155,
+          51.052846935052024
+        ]
+      }
+    }
+  ]
+},
+
+
+
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Kouter"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.725577592849731,
+          51.05085735863332
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "STAM"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.7176489830017094,
+          51.04418659575292
+        ]
+      }
+    }
+  ]
+},
+
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Sint-Annakerk"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.734750747680664,
+          51.04912399696649
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+
+        "title": "Papegaaistraat"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.7162435054779053,
+          51.050182906550944
+        ]
+      }
+    }
+  ]
+},
+
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Capitole"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.731961250305176,
+          51.04802459388414
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Lange Munt"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.7233996391296382,
+          51.056448188191034
+        ]
+      }
+    }
+  ]
+},
+
+
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Leopoldkazerne"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.722906112670898,
+          51.0419875291025
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Wintercircus"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.7272298336029053,
+          51.048215136471846
+        ]
+      }
+    }
+  ]
+},
+
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Sterre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.710846900939942,
+          51.02425627103607
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "'t Pand"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.7197089195251465,
+          51.05285367923352
+        ]
+      }
+    }
+  ]
+}
