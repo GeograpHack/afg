@@ -163,3 +163,34 @@
 }
 
 
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Leopoldkazerne"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.722906112670898,
+          51.0419875291025
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Wintercircus"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.7272298336029053,
+          51.048215136471846
+        ]
+      }
+    }
+  ]
+}
