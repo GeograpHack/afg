@@ -1,1 +1,122 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#fd9200",
+        "marker-size": "medium",
+        "marker-symbol": "entrance",
+        "title": "'t Kuipke"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.7202185392379765,
+          51.03845598740555
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#0d00fd",
+        "marker-size": "medium",
+        "marker-symbol": "marker",
+        "title": "St. Jacob"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.7278655171394353,
+          51.05632343035917
+        ]
+      }
+    }
+  ]
+}
+
+
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#fd0000",
+        "marker-size": "medium",
+        "marker-symbol": "rail-underground",
+        "title": "Station"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.7109756469726562,
+          51.0361588229598
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#8d4bb1",
+        "marker-size": "medium",
+        "marker-symbol": "star",
+        "title": "Universiteit"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.720250725746155,
+          51.052846935052024
+        ]
+      }
+    }
+  ]
+}
+
+
+
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#c1a43c",
+        "marker-size": "medium",
+        "marker-symbol": "roadblock",
+        "title": "Kouter"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.725577592849731,
+          51.05085735863332
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#1a00fd",
+        "marker-size": "medium",
+        "marker-symbol": "triangle",
+        "title": "STAM"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          3.7176489830017094,
+          51.04418659575292
+        ]
+      }
+    }
+  ]
+}
+
+
+
+
+
 
