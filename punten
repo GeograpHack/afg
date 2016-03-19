@@ -3,7 +3,12 @@
   "features": [
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {
+        "marker-color": "#fd9200",
+        "marker-size": "medium",
+        "marker-symbol": "entrance",
+        "title": "'t Kuipke"
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -14,7 +19,12 @@
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {
+        "marker-color": "#0d00fd",
+        "marker-size": "medium",
+        "marker-symbol": "marker",
+        "Title": "St. Jacob"
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -25,3 +35,9 @@
     }
   ]
 }
+
+
+
+
+
+
