@@ -15,11 +15,14 @@ Git
    * "commit - push - oops - pull - push - oops - pull - push - pfew" -> *nie goe bezig*. beter is "commit - fetch - merge - test - push - oops - fetcg - merge - push". veel beter is "commit - fetch - *rebase* - test - push - fetch - *rebase* - test - push (etc...) - OK!"
 * een grafische Git client (Windows: TortoiseGit; Linux/Mac: SourceTree, of, _in extremis_, `gitk`) blijft de absolute aanrader (maar hou GitHub for X, evenals de web interface van GitHub als absolute _last ditch_). Aanleren van Git vereist een bijkomende training om in teamverband te werken: branching, merges, rebase zijn belangrijke concepten. Git is veel complexer dan CVS of SVN, en als je dat niet gelooft tik je maar `git help git` in. andere aanwijzing: ga even buiten die goed bewandelde paden (`git clone/add/commit/push/pull`, met de bijkomende triviale opties), suggereer `rebase` en aanzie de vertwijfeling die toeslaat.
 * een grafische client is je beste vriend om problemen te zien aankomen, vooral nadat je een `fetch` hebt gedaan (want met de standaard `pull` reflex heb je jezelf al extra problemen bezorgd).
+* een team git training geven op een hackathon is natuurlijk geen optie...
 
 Python
 
 * Python 3x was een verassing - op zo'n event zal je al genoeg uitdagingen hebben, Python 2.7x was voldoende?
+ - Elk besturingssysteem dat de naam waardig is, heeft Python 3.x natuurlijk standaard geïnstalleerd. Het is ondertussen ook al acht jaar geleden gereleased, dus het wordt dringend tijd dat nieuwe apps Python 3 omarmen.
 * op de Geomobiel laptop was Py 3.5.1 installatie een ramp; uiteindelijk lukte het met een 3.4 zip (en achteraf, thuis was 3.5.1 het een makkie, al blijft Python voor irritatie zorgen). Maar toen WAMP op het toneel verscheen heb ik de handdoek in de ring geworpen.
+ - WAMP?
 * dit soort events is een uitstekende "team building" event voor kleine bedrijven, op voorwaarde dat je precies weet wat je aan wie hebt.
 
 ----
