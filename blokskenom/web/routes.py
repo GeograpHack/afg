@@ -10,10 +10,6 @@ blueprint = Blueprint('web', __name__,
 )
 
 @blueprint.route('/')
-def home():
-    return render_template('home.html')
-
-@blueprint.route('/game')
 def game():
     return render_template('map.html')
 
@@ -23,5 +19,4 @@ def check(dao):
     data = request.get_json(force=True)
     geom = shape(data)
     roads = [Road(*r).__geo_interface__ for r in dao.problems(geom=geom)]
-    #return json.dumps(roads)
     return geojson.dumps(geojson.FeatureCollection(roads))
