@@ -1,0 +1,32 @@
+{
+  "name": "lrm-graphhopper",
+  "version": "1.2.0",
+  "description": "Support for GraphHopper in Leaflet Routing Machine",
+  "main": "dist/lrm-graphhopper.js",
+  "keywords": [
+    "leaflet",
+    "routing",
+    "graphhopper"
+  ],
+  "author": "Per Liedman <per@liedman.net>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shvelo/lrm-graphhopper.git"
+  },
+  "ignore": [
+    "scripts"
+  ],
+  "homepage": "https://github.com/shvelo/lrm-graphhopper",
+  "bugs": "https://github.com/shvelo/lrm-graphhopper/issues",
+  "_release": "1.2.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.2.0",
+    "commit": "e56aaf6ee5407fc704d887dcec3d35173ac7f924"
+  },
+  "_source": "git://github.com/shvelo/lrm-graphhopper.git",
+  "_target": "^1.2.0",
+  "_originalSource": "lrm-graphhopper",
+  "_direct": true
+}

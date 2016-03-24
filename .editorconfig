@@ -17,3 +17,7 @@ indent_size = 4
 
 [Vagrantfile]
 indent_size = 2
+
+[Makefile]
+indent_size = 4
+indent_style = tab

@@ -19,6 +19,7 @@
   ],
   "dependencies": {
     "leaflet": "~0.7.7",
-    "Materialize": "materialize#~0.97.5"
+    "Materialize": "materialize#~0.97.5",
+    "lrm-graphhopper": "^1.2.0"
   }
 }

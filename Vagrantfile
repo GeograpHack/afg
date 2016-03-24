@@ -2,7 +2,7 @@
 # vi: set ft=ruby :
 
 Vagrant.configure(2) do |config|
-  config.vm.network "forwarded_port", guest: 5432, host: 54321
+  config.vm.network "forwarded_port", guest: 5432, host: 5432
   config.vm.define "dev", primary: true do |dev|
     dev.vm.box = "ubuntu/trusty64"
 
